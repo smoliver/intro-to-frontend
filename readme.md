@@ -5,10 +5,10 @@
 
 #### Topics
 1. [Vanilla Javascript & ES6](./vanilla)
-  * Variable and `this` scoping in JS
-  * Truthiness
-  * DOM
-  * ES6
-  * SASS
-  * Webpack
-  * Babel
+    * Variable and `this` scoping in JS
+    * Truthiness
+    * DOM
+    * ES6
+    * SASS
+    * Webpack
+    * Babel
