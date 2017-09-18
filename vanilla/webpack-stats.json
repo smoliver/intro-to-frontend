@@ -1,0 +1,15 @@
+{
+  "status": "done",
+  "chunks": {
+    "main": [
+      {
+        "name": "bundle.js",
+        "path": "/Users/SamO/projects/2017_summer/front-end-talk/vanilla/dist/bundle.js"
+      },
+      {
+        "name": "bundle.js.map",
+        "path": "/Users/SamO/projects/2017_summer/front-end-talk/vanilla/dist/bundle.js.map"
+      }
+    ]
+  }
+}
