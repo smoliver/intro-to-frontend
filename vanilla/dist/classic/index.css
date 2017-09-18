@@ -1,0 +1,28 @@
+html {
+	background-color: #E9E9E9;
+}
+
+h1, h2, h3, h4 {
+	color: #333;
+}
+
+.page-container {
+	width: 100%;
+	max-width: 900px;
+	margin: 8vh auto 32px;
+	color: #666;
+	font-family: helvetica, arial, sans-serif;
+	line-height: 1.5em;
+}
+
+b {
+	letter-spacing: .2px;
+	background-color: #E9E9E9;
+	color: #333
+}
+
+section {
+	margin-bottom: 2em;
+	background-color: #FFF;
+	padding: 2em 6vw 4em;
+}

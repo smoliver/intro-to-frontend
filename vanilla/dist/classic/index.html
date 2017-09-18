@@ -7,7 +7,47 @@
     <meta name="mobile-web-app-capable" content="yes">
   </head>
   <body>
-
-  	<script type="text/javascript" src="./intro-to-this.js"></script>
+    <main class="page-container">
+      <section>
+        <h1>Vanilla</h1>
+        <p>
+          Welcome to ye-old super vanilla webpage.  Because nothing is precompiled by webpack's loaders, we can test the <i>this</i>'s behavior on the frontend without any obfuscation
+        </p>
+      </section>
+      <section>
+        <h2>First things first: adding style</h2>
+        <p>This page looks horrible. Let's jump into the editor, and hook up a style sheet the old fashioned way</p>
+        <ol>
+          <li>Open intro-to-frontend in your text editor of choice</li>
+          <li>Navigate to <b>/vanilla/dist/classic/index.html</b></li>
+          <li>
+            add a style link to the header <b>&lt;link href="./index.css" rel="stylesheet" type="text/css"&gt;</b>
+          </li>
+        </ol>
+        <p>Not perfect, but better</p>
+      </section>
+      <section>
+        <h2>Adding a script</h2>
+        <p>
+          Add <b>&lt;script type="text/javascript" src="./index.js"&gt;&lt;/script&gt;</b> above the <b>&lt;/body&gt;</b> tag
+        </p>
+      </section>
+      <section>
+        <h2>Checking Console</h2>
+        <p>
+          To open the chrome developer console go the the top menu <b>View > Developer > Developer Tools</b>
+        </p>
+        <p>
+          You can also use the shortcut <b>&#8997;&#8984;i</b> or <b>alt&#8984;i</b>
+        </p>
+      </section>
+      <section>
+        <h2>Strict Mode and <i>this</i></h2>
+        <p>
+          Strict mode restricts javascript uses, and encourages good coding practices.  More importantly, ES6, the new version of javascript, <a href="https://goo.gl/EKvMbB">always enforces strict mode</a>.  For a full list of the differences read the <a href="https://goo.gl/ye7t6b">mdn article</a>
+        </p>
+        <p>For now, we are going to look at how it affects the scope of <i>this</i> within a function.  Comment out the <b>"use strict";</b> line from <b>/vanilla/dist/classic/index.js</b> and see how the console output differs</p>
+      </section>
+    </main>
   </body>
 </html>

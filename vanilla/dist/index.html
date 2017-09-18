@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- The page title used in tabs and by website indexing services (google, Facebook, etc.)-->
     <title>Vanilla JS</title>
+
+    <!-- The character set used the the website, REQUIRED-->
     <meta charset="utf-8">
+
+    <!-- Used for most web-apps to ensure that the screen can't be resized / zoomed by pinch gestures-->
+    <!-- Not required, especially for this website, but a nice line of code to have -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <meta name="mobile-web-app-capable" content="yes">
   </head>
   <body>
     <main id="app">
-      <h1>
-        <small>Welcome to</small>
-        <br/>
-        Feed Your Family With Javascript
-        <br/>
-        <small>An introduction to JS for Object Oriented Programmers</small>
-      </h1>
-      <p>The <b>central</b> difference between Javascript (<i>JS</i>) and C based langues is that JS is interpreted rather than compiled. Practically, this difference means that JS variable types are determined at run time and functions can be treated like any other object</p>
-      <p>The first major point of adjustment is understanding implicit variable conversion, and their truthiness values</p>
+      <div class="container">
+        <h1>
+          Feed Your Family With Javascript
+          <br/>
+          <small>An introduction to JS for Object Oriented Programmers</small>
+        </h1>
+        
+        <h2>JS vs C</h2>
+        <p>
+          The central difference between Javascript and C based langues is that JS is interpreted rather than compiled. As a result JS variable types are determined at run time and functions can be treated like any other object.
+        </p>
+        <p>
+          Because functions are "first class objects," the scope of the <i>this</i> keyword varries widely depending on mode and syntax, and is more complicated to anticipate
+        </p>
+        <p>
+          A final difference is truthiness.  Because javascript isn't compiled to binary, truthiness in the language is a little more arbitrary and illogical
+        </p>
+
+        <h2>Variables</h2>
+        <p>There are three ways declare a variable in javascript.  All three can be used for any variable type.</p>
+        <ol>
+          <li>
+            <h3><a href="https://goo.gl/EQFfp9" target="_blank">var</a></h3>
+            <p>The most basic form of variable declaration. Fully backwards compatable. Global or function scope</p>
+          </li>
+          <li>
+            <h3><a href="https://goo.gl/cRfCme" target="_blank">let</a></h3>
+            <p>Introduced in ECMAScript 2015 (<i>ES 2015</i>). Block scope, similar to C++ variables</p>
+          </li>
+          <li>
+            <h3><a href="https://goo.gl/7YR1W9" target="_blank">const</a></h3>
+            <p>Introduced in ES 2015, similar to <i>let</i> but cannot be reasigned</p>
+          </li>
+        </ol>
+
+        <h2>This</h2>
+        <p>
+          To fully understand JS <i>this</i>, we are going to open up <a href="./classic">a fully vanilla html page</a> without any pre-compilers
+        </p>
+        
+      </div>
     </main>
     <script type="text/javascript" src="./bundle.js"></script>
   </body>
