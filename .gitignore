@@ -4,4 +4,9 @@
 */dist/*.css
 */dist/*.jpg
 */dist/*.png
-react-site/src/*
+*/webpack-stats.json
+react-site/src/components
+react-site/index.js
+react-site/index.scss
+react-site/webpack.config
+react-site/package.json

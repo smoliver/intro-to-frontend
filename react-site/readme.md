@@ -7,8 +7,9 @@ Content from this project builds off information from [Vanilla](../vanilla).
 4. HTML + CSS
 ### The project will introduce
 1. [React](https://facebook.github.io/react/) and web frameworks
-2. [React Router](https://reacttraining.com/react-router/web/guides/philosophy) to handle browser-side routing
-3. [React Motion](https://github.com/chenglou/react-motion) to handle React animation
+### Further Reader
+1. [React Router](https://reacttraining.com/react-router/web/guides/philosophy) to handle browser-side routing
+2. [React Motion](https://github.com/chenglou/react-motion) to handle React animation
 
 ## Start the package
 1. run `npm install` to download the websites dependencies

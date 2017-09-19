@@ -1,0 +1,27 @@
+/*
+ * VARIABLES
+ * 
+ * Global sizes and colors that can be used in every component
+ *
+ */
+
+/* ============================================================ *\
+|* Colors
+\* ============================================================ */
+
+$black:					#000;
+$white:					#FFF;
+$light-gray:			#CCC;
+$gold:					#F89B39;
+
+// Insert brand color values
+
+/* ============================================================ *\
+|* Breakpoints
+\* ============================================================ */
+
+$bp-mobile:	 			480px;
+$bp-mobile-large:		768px;
+$bp-tablet:				1024px;
+$bp-monitor-small:		1240px;
+$bp-monitor-medium:		1440px;
