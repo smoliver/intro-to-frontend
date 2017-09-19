@@ -34,6 +34,23 @@ Content from this project builds off information from [Vanilla](../vanilla).
     }
     ```
 4. Create a file named `src/index.js`, and import the `react` and `react-dom` at the top of the file
+    ```
+    import React from 'react';
+    import ReactDOM from 'react-dom'
+    ```
 5. You are now able to write JSx style components into your react app!
 
 ### *Task:* use [React.Component](https://facebook.github.io/react/docs/react-component.html) and [React DOM](https://facebook.github.io/react/docs/react-dom.html#render) to render your first react compoent to the screen 
+
+### Adding style
+1. Create a style file called `src/index.scss`
+2. Link the style file to your build tree by importing it into your `src/index.js`
+```require ('index.scss');```
+
+### Including outside components
+1. You can include outside components by using either `require ()` as we did with the style document or using `import` similar to how we imported React into our project.  
+    * In both these cases, the directory location is going to be relative to `resolve.modules` in `webpack.config.js` if an absolute path is given.  
+    * Read more about webpack's [resolve](https://webpack.js.org/configuration/resolve/) to learn how to alias include paths
+2. You can include their style-sheets from your own using the sass `@import`;
+
+### *Task:* Replace the component you wrote with the `<App>` component in `src/app` and include it's stylesheets into your `index.scss` using `@import`
