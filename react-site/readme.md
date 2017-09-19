@@ -35,4 +35,4 @@ Content from this project builds off information from [Vanilla](../vanilla).
 4. Create a file named `src/index.js`, and import the `react` and `react-dom` at the top of the file
 5. You are now able to write JSx style components into your react app!
 
-## Task: use [React.Component](https://facebook.github.io/react/docs/react-component.html) and [React DOM](https://facebook.github.io/react/docs/react-dom.html#render) to render your first react compoent to the screen 
+### *Task:* use [React.Component](https://facebook.github.io/react/docs/react-component.html) and [React DOM](https://facebook.github.io/react/docs/react-dom.html#render) to render your first react compoent to the screen 
