@@ -20,3 +20,12 @@
     * SASS
     * Webpack
     * Babel
+
+
+### Helpful Links + Tools
+* [html codes](https://websitebuilders.com/tools/html-codes/a-z/)
+* [Browserstack](https://www.browserstack.com/), for Cross Browser testing
+* [Can I Use](http://caniuse.com/), for cross browser compatibility 
+* [You Might not need JQuery](http://youmightnotneedjquery.com/) to avoid JQuery like the plague
+* [Regex Tester](https://www.regextester.com/) for when you need some regex refreshers
+* [MDN Chrome search extension](https://chrome.google.com/webstore/detail/mdn-search/ffpifaemeofjmncjdbegmbpcdaemkeoc?hl=en)
