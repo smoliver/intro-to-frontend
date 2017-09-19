@@ -11,5 +11,7 @@
         "path": "/Users/SamO/projects/2017_summer/front-end-talk/vanilla/dist/bundle.js.map"
       }
     ]
-  }
+  },
+  "error": "ModuleBuildError",
+  "message": "Module build failed: SyntaxError: Unexpected token (32:9)\n\n  30 | }\n  31 | \n> 32 | function ()\n     |          ^\n"
 }
