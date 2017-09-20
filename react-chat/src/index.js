@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as firebase from 'firebase/app';
+import 'firebase/database';
 
 import App from 'app';
-import messages from 'data/messages.json';
+import firebaseConfig from 'firebase.config.js';
 
 require ('./index.scss')
+
+firebase.initializeApp (firebaseConfig);
+let messages = firebase.database().ref ('messages');
 
 
 window.onload = () => {

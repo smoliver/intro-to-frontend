@@ -1,0 +1,19 @@
+/**
+ * Message Display
+ */
+
+$NS : "message-display--";
+
+.#{$NS}container {
+	padding: 2%;
+	background-color: $white;
+}
+
+.#{$NS}time {
+	color: $light-gray;
+	font-size: 10pt;
+}
+
+.#{$NS}content {
+
+}

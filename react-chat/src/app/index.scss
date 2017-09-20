@@ -1,0 +1,19 @@
+/** 
+ * App 
+ */
+
+@import './variables';
+@import './base';
+@import './typeography';
+
+$NS : 'app--';
+
+.#{$NS}container {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.#{$NS}message-list {
+	flex-grow: 1;
+}

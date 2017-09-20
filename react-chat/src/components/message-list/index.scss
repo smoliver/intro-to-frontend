@@ -1,0 +1,15 @@
+/**
+ * Message List
+ */
+
+$NS : 'message-list--';
+
+.#{$NS}container {
+	overflow: auto;
+	padding: 2%;
+	background-color: $white-tint;
+}
+
+.#{$NS}message + .#{$NS}message {
+	margin-top: 2%;
+}
