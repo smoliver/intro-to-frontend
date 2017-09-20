@@ -4,12 +4,14 @@
     "main": [
       {
         "name": "bundle.js",
-        "path": "/Users/SamO/projects/2017_summer/front-end-talk/vanilla/dist/bundle.js"
+        "path": "/Users/SamO/projects/2017_summer/front-end-talk/react-site/dist/bundle.js"
       },
       {
         "name": "bundle.js.map",
-        "path": "/Users/SamO/projects/2017_summer/front-end-talk/vanilla/dist/bundle.js.map"
+        "path": "/Users/SamO/projects/2017_summer/front-end-talk/react-site/dist/bundle.js.map"
       }
     ]
-  }
+  },
+  "error": "ModuleBuildError",
+  "message": "Module build failed: SyntaxError: Adjacent JSX elements must be wrapped in an enclosing tag (30:4)\n\n  28 |   return (\n  29 |     <h1>MHacks XXX</h1>\n> 30 |     <p>lol</p>\n     |     ^\n  31 |   )\n  32 | }\n  33 | \n"
 }
