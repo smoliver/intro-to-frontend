@@ -12,6 +12,8 @@ class App extends React.Component {
     super (props)
 
     this.props.messages.on ('child_added', this.onRemoteMessageAdded.bind (this));
+    this.props.messages.on ('child_changed', this.onRemoteMessageChanged.bind (this));
+    this.props.messages.on ('child_removed', this.onRemoteMessageChanged.bind (this));
 
     this.state = {
       messages : [],
@@ -31,6 +33,28 @@ class App extends React.Component {
     });
   }
 
+  onRemoteMessageChanged (data) {
+
+  }
+
+  onRemoteMessageRemoved (data) {
+
+  }
+
+  removeMessage (key) {
+    const messages = this.state.messages;
+    this.props.messages.child (key).remove ();
+    const deleteIdx = messages.findIndex ((message) => message.key === key);
+
+    this.setState ({
+      messages: [
+        ...messages.slice (0, deleteIdx), 
+        ...messages.slice (deleteIdx + 1, messages.length)
+      ]
+    })
+  }
+
+
   addMessage (messageText) {
     // Ensures that only filled messages are created
     if (messageText == undefined || messageText === '') return;
@@ -39,7 +63,7 @@ class App extends React.Component {
     const message = new Message (messageText);
 
     // Add it to the firebase database
-    const messageRef = this.props.messages.push ();
+    const messageRef = this.props.messages.push (message);
     messageRef.set (message);
 
     // Add it to the state messages array, with its corresponding firebase key
@@ -52,7 +76,10 @@ class App extends React.Component {
     const displayMessages = this.state.displayFilter (this.state.messages);
     return (
       <div className={`${NS}container`}>
-        <MessageList className={`${NS}message-list`} messages={displayMessages}/>
+        <MessageList 
+          className={`${NS}message-list`} 
+          messages={displayMessages} 
+        />
         <Editor onSubmit={this.addMessage.bind (this)}/>
       </div>
     );

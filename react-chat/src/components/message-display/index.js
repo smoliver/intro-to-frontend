@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from 'components/icon';
 
 const NS = 'message-display--';
 
@@ -22,8 +23,17 @@ export default ({message, time, ...rest}) => (
     className={`${NS}container ${rest.className || ''}`} 
     key={rest.key}
   >
-    <div className={`${NS}time`}>{timeToDisplay (time)}</div>
-    <p className={`${NS}content`}>{message}</p>
+    <div>
+      <div className={`${NS}time`}>{timeToDisplay (time)}</div>
+      <p className={`${NS}content`}>{message}</p>
+    </div>
+    <div>
+      <Icon 
+        className={`${NS}delete`} 
+        symbol={Icon.SYMBOL.X} 
+        onClick={() => {rest.remove && rest.remove ()}}
+      />
+    </div>
   </div>
 );
 
